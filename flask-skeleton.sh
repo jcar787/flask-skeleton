@@ -13,7 +13,7 @@ echo "Creating the virtual environment in $1"
 virtualenv venv && source ./venv/bin/activate
 
 echo "Installing Flask, Flask-Login, Flask-Mongokit, Flask-WTF"
-pip install Flask Flask-Login Flask-Mongokit Flask-WTF
+pip install Flask Flask-Login Mongokit Flask-WTF
 
 echo "Creating and changing to the app directory"
 mkdir app && cd app
