@@ -7,7 +7,7 @@ if test $# -eq 0
 fi
 
 echo "Creating directory $1 and changing to it"
-mkdir $1 && cd $1
+mkdir -p $1 && cd $1
 
 echo "Creating the virtual environment in $1"
 virtualenv venv && source ./venv/bin/activate
